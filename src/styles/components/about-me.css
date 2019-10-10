@@ -1,0 +1,20 @@
+.about-me {
+  width: 100%;
+  max-width: 800px;
+
+  @media (max-width: 799px) {
+    margin-top: 1.5em;
+  }
+  @media (min-width: 800px) {
+    margin-top: 3em;
+  }
+}
+
+.about-me__heading {
+  margin-bottom: .5em;
+  color: var(--color-brand-4);
+}
+
+.about-me__copy {
+  color: var(--color-brand-4);
+}

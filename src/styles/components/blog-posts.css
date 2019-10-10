@@ -1,0 +1,26 @@
+.blog-posts {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 799px) {
+    margin-top: 1.5em;
+  }
+  @media (min-width: 800px) {
+    margin-top: 3em;
+  }
+}
+
+.blog-posts__heading {
+  margin-bottom: .5em;
+  color: var(--color-brand-4);
+}
+
+.blog-posts__link {
+  display: inline-block;
+  
+  &:not(:first-of-type) {
+    margin-top: 1.5em
+  }
+}
