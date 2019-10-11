@@ -75,15 +75,38 @@
 }
 @keyframes bounce {
   0% {
-  transform: translateY(0);
+    transform: translateY(0);
   }
   30% {
-  transform: translateY(1px);
+    transform: translateY(1px);
   }
   60% {
     transform: translateY(-1px);
   }
   100% {
-  transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.mountain-svg__flag {
+  animation: flag ease 10s;
+  animation-iteration-count: 1;
+  transform: translateY(0px);
+}
+@keyframes flag {
+  0% {
+    transform: translateY(10px);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  70% {
+    transform: translateY(4px);
+  }
+  85% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
