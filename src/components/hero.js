@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/components/hero.css';
 import Socials from './modules/socials';
+import MountainsSvg from './modules/mountainsSvg';
 
 
 // Stateless React Component
@@ -12,6 +13,7 @@ const Hero = () => (
       <span className="hero__sub-display__enhanced"> UX Developer</span>
     </h2>
     <Socials />
+    <MountainsSvg />
   </header>
 )
 

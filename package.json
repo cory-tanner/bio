@@ -131,5 +131,7 @@
       "react-app"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "create-react-component-folder": "^0.1.30"
+  }
 }
