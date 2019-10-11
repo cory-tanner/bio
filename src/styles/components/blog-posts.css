@@ -1,8 +1,6 @@
 .blog-posts {
   width: 100%;
-  max-width: 800px;
-  display: flex;
-  flex-direction: column;
+  max-width: 736px;
 
   @media (max-width: 799px) {
     margin-top: 1.5em;
@@ -18,9 +16,18 @@
 }
 
 .blog-posts__link {
-  display: inline-block;
-  
-  &:not(:first-of-type) {
-    margin-top: 1.5em
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  border-top: 1px solid var(--color-brand-4);
+
+  &:last-of-type {
+    border-bottom: 1px solid var(--color-brand-4);
   }
+}
+
+.blog-post__link__date {
+  margin-top: .5em
 }

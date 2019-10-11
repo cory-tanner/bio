@@ -1,6 +1,6 @@
 .about-me {
   width: 100%;
-  max-width: 800px;
+  max-width: 736px;
 
   @media (max-width: 799px) {
     margin-top: 1.5em;

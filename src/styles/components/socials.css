@@ -10,7 +10,7 @@
 
   &:hover,
   &:focus {
-    fill: var(--color-brand-2);
+    fill: var(--color-link);
   }
 }
 
