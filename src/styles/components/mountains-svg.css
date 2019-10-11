@@ -1,0 +1,53 @@
+.mountain-svg {
+  position: absolute;
+  bottom: -6px;
+
+  @media (max-width: 559px) {
+    left: 3px;
+  }
+  @media (min-width: 560px) {
+    left: -5px;
+  }
+}
+
+.mountain-svg__first,
+.mountain-svg__second,
+.mountain-svg__third {
+  position: relative;
+
+  @media (max-width: 559px) {
+    width: 64px;
+    height: 64px;
+  }
+  @media (min-width: 560px) {
+    width: 86px;
+    height: 86px;
+  }
+}
+
+.mountain-svg__first {
+  @media (max-width: 559px) {
+    left: 0;
+  }
+  @media (min-width: 560px) {
+    left: 0;
+  }
+}
+
+.mountain-svg__second {
+  @media (max-width: 559px) {
+    left: -12px;
+  }
+  @media (min-width: 560px) {
+    left: -16px;
+  }
+}
+
+.mountain-svg__third {
+  @media (max-width: 559px) {
+    left: -24px;
+  }
+  @media (min-width: 560px) {
+    left: -28px;
+  }
+}
