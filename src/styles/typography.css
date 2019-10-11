@@ -44,6 +44,12 @@
 
 .t-list-copy {
   font-size: var(--type-scale-20);
+  font-weight: var(--weight-bold);
+  line-height: 1.2;
+}
+
+.t-list-date {
+  font-size: var(--type-scale-16);
 }
 
 .t-link {
@@ -52,6 +58,6 @@
 
   &:hover,
   &:focus {
-    color: var(--color-brand-2);
+    color: var(--color-link);
   }
 }
