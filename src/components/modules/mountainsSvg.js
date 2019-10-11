@@ -6,8 +6,10 @@ import '../../styles/components/mountains-svg.css';
 const MountainsSvg = () => (
   <div className="mountain-svg">
     <svg className="mountain-svg__first" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="presentation">
-      <path d="m23 12h10v6h-10" fill="var(--color-link)"/>
-      <path d="m23 12v3.861c.482.088.983.139 1.5.139 3.145 0 5.767-1.718 6.369-4z" fill="var(--color-brand-2)"/>
+      <g className="mountain-svg__flag">
+        <path d="m23 12h10v6h-10" fill="var(--color-link)"/>
+        <path d="m23 12v3.861c.482.088.983.139 1.5.139 3.145 0 5.767-1.718 6.369-4z" fill="var(--color-brand-2)"/>
+      </g>
       <path d="m22 9h2v20h-2z" fill="#8892a0"/>
       <path d="m36 62 12-26 12 26" fill="var(--color-brand-3)"/>
       <path d="m47.845 36.335-11.845 25.665h6.444c4.806-2.658 8.159-8.593 8.159-15.502 0-3.816-1.034-7.326-2.758-10.163z" fill="var(--color-brand-2)"/>
