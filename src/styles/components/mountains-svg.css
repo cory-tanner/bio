@@ -51,3 +51,39 @@
     left: -28px;
   }
 }
+
+.mountain-svg__bounce {
+  animation: bounce cubic-bezier(0.63, 0.23, 0.38, 0.91) 3s;
+  animation-delay: 3s;
+}
+.mountain-svg__bounce-2 {
+  animation: bounce cubic-bezier(0.68, 0.28, 0.49, 0.76) 4s;
+}
+.mountain-svg__bounce-3 {
+  animation: bounce cubic-bezier(0.68, 0.28, 0.49, 0.76) 4s;
+  animation-delay: 2s;
+}
+.mountain-svg__bounce-4 {
+  animation: bounce cubic-bezier(0.68, 0.28, 0.49, 0.76) 4s;
+  animation-delay: 4s;
+}
+.mountain-svg__bounce,
+.mountain-svg__bounce-2,
+.mountain-svg__bounce-3,
+.mountain-svg__bounce-4 {
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+  transform: translateY(0);
+  }
+  30% {
+  transform: translateY(1px);
+  }
+  60% {
+    transform: translateY(-1px);
+  }
+  100% {
+  transform: translateY(0);
+  }
+}

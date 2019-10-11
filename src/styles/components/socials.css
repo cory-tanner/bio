@@ -1,8 +1,14 @@
 .socials {
-  margin-top: 16px;
   display: flex;
   align-self: flex-end;
+
+  @media (max-width: 569px) {
+    margin-top: 8px;
   }
+  @media (min-width: 560px) {
+    margin-top: 16px;
+  }
+}
 
 .socials__link {
   padding: 8px;

@@ -34,7 +34,3 @@
 .hero__sub-display {
   align-self: flex-end;
 }
-
-.hero__sub-display__enhanced {
-  font-weight: var(--weight-bold);
-}
