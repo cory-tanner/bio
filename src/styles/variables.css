@@ -22,13 +22,13 @@
   --color-link: hsl(195, 100%, 33%);
 
   /* FONT FAMILIES */
+  --font-mukta: 'Mukta', sans-serif;
   --font-noto-sans: 'Noto Sans', sans-serif;
-
 
   /* FONT WEIGHTS */
   --weight-regular: 400;
-  --weight-bold: 700;
-
+  --weight-semi-bold: 600;
+  --weight-extra-bold: 800;
 
   /* GLOBAL MEASUREMENTS */
   --dy-gutter: 16px;
