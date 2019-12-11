@@ -6,6 +6,10 @@ import '../../styles/components/blog-posts.css';
 const SectionBlogPosts = () => (
   <section className="blog-posts grid">
     <h3 className="t-section-heading blog-posts__heading grid__item" data-grid-small="12">Blog Posts</h3>
+    <a className="t-link blog-posts__link grid__item" data-grid-medium="10" href="https://dockyard.com/blog/2019/12/05/know-the-code-how-design-and-engineering-team-up-for-design-qa">
+      <span className="t-list-copy">Know the Code: How Design and Engineering Team Up for Design QA</span>
+      <time className="t-list-date blog-post__link__date" dateTime="2019-12-05T18:03:08.082Z">December 5, 2019</time>
+    </a>
     <a className="t-link blog-posts__link grid__item" data-grid-medium="10" href="https://dockyard.com/blog/2019/04/17/narwin-grid-harmony-between-css-grid-and-data-attributes">
       <span className="t-list-copy">narwin-grid: Harmony Between CSS Grid and Data Attributes</span>
       <time className="t-list-date blog-post__link__date" dateTime="2019-04-17T16:20:44.288Z">April 17, 2019</time>
