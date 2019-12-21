@@ -1,8 +1,5 @@
 import React from 'react';
-import '../../styles/components/blog-posts.css';
 
-
-// Stateless React Component
 const SectionBlogPosts = () => (
   <section className="blog-posts grid">
     <h3 className="t-section-heading blog-posts__heading grid__item" data-grid-small="12">Blog Posts</h3>

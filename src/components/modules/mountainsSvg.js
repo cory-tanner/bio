@@ -1,8 +1,5 @@
 import React from 'react';
-import '../../styles/components/mountains-svg.css';
 
-
-// Stateless React Component
 const MountainsSvg = () => (
   <div className="mountain-svg">
     <svg className="mountain-svg__first" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="presentation">
