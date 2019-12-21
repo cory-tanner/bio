@@ -70,3 +70,9 @@
     color: var(--color-link);
   }
 }
+
+.t-footer {
+  font-size: var(--type-scale-14);
+  letter-spacing: .0625rem;
+  line-height: 1.4;
+}

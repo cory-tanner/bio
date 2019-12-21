@@ -4,5 +4,11 @@
 @import './styles/typography.css';
 @import './styles/grid.css';
 
+@import './styles/components/icons.css';
+@import './styles/components/hero.css';
+@import './styles/components/main.css';
 @import './styles/components/about-me.css';
 @import './styles/components/blog-posts.css';
+@import './styles/components/footer.css';
+@import './styles/components/socials.css';
+@import './styles/components/mountains-svg.css';

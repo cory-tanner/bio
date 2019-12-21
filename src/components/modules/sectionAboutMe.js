@@ -1,8 +1,5 @@
 import React from 'react';
-import '../../styles/components/about-me.css';
 
-
-// Stateless React Component
 const SectionAboutMe = () => (
   <section className="about-me">
     <h3 className="t-section-heading about-me__heading">What I Do</h3>
