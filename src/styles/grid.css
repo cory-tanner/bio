@@ -137,40 +137,40 @@
   }
 
   /* Grid item start values that position elements on the 12 column grid, this is just like setting an offset for grid items */
-  &[data-grid-item-start="1"] {
+  &[data-grid-start="1"] {
     grid-column-start: 1;
   }
-  &[data-grid-item-start="2"] {
+  &[data-grid-start="2"] {
     grid-column-start: 2;
   }
-  &[data-grid-item-start="3"] {
+  &[data-grid-start="3"] {
     grid-column-start: 3;
   }
-  &[data-grid-item-start="4"] {
+  &[data-grid-start="4"] {
     grid-column-start: 4;
   }
-  &[data-grid-item-start="5"] {
+  &[data-grid-start="5"] {
     grid-column-start: 5;
   }
-  &[data-grid-item-start="6"] {
+  &[data-grid-start="6"] {
     grid-column-start: 6;
   }
-  &[data-grid-item-start="7"] {
+  &[data-grid-start="7"] {
     grid-column-start: 7;
   }
-  &[data-grid-item-start="8"] {
+  &[data-grid-start="8"] {
     grid-column-start: 8;
   }
-  &[data-grid-item-start="9"] {
+  &[data-grid-start="9"] {
     grid-column-start: 9;
   }
-  &[data-grid-item-start="10"] {
+  &[data-grid-start="10"] {
     grid-column-start: 10;
   }
-  &[data-grid-item-start="11"] {
+  &[data-grid-start="11"] {
     grid-column-start: 11;
   }
-  &[data-grid-item-start="12"] {
+  &[data-grid-start="12"] {
     grid-column-start: 12;
   }
 }

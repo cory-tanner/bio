@@ -93,17 +93,6 @@ module.exports = function(webpackEnv) {
             require('postcss-flexbugs-fixes'),
             require('postcss-nested'),
             require('postcss-preset-env')({
-              autoprefixer: {
-                flexbox: 'no-2009',
-                browsers: [
-                  'last 1 Chrome versions',
-                  'last 1 Safari versions',
-                  'last 1 Firefox versions',
-                  'last 1 Edge versions',
-                  'last 1 ios versions',
-                  'last 1 ChromeAndroid versions'
-                ]
-              },
               stage: 3,
             }),
             // Adds PostCSS Normalize as the reset css with default options,
@@ -278,9 +267,6 @@ module.exports = function(webpackEnv) {
         .map(ext => `.${ext}`)
         .filter(ext => useTypeScript || !ext.includes('ts')),
       alias: {
-        // Support React Native Web
-        // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
-        'react-native': 'react-native-web',
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding

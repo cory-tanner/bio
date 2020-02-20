@@ -1,0 +1,43 @@
+.projects {
+  width: 100%;
+  max-width: 736px;
+
+  @media (max-width: 799px) {
+    margin-top: 1.5em;
+  }
+  @media (min-width: 800px) {
+    margin-top: 3em;
+  }
+}
+
+.projects__heading {
+  margin-bottom: .333em;
+  color: var(--color-brand-4);
+}
+
+.projects__link {
+  max-width: 356px;
+  margin-top: 1em;
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: var(--color-brand-4);
+  border: 5px solid var(--color-brand-3);
+  border-radius: 4px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-link);
+  }
+}
+
+.projects__link__img {
+  width: 100%;
+  height: auto;
+}
+
+.projects__link__name {
+  padding: .5em 6px;
+  color: var(--color-white);
+}

@@ -1,5 +1,6 @@
 .footer {
   padding: 2em 16px;
+  grid-area: footer;
   text-align: center;
   color: var(--color-brand-3);
 }
