@@ -88,10 +88,11 @@ button {
 
 .App {
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
   grid-template-areas:
   "hero"
-  "main";
+  "main"
+  "footer";
   grid-template-rows: auto 1fr;
-  grid-template-columns:1fr;
+  grid-template-columns: 1fr;
 }
