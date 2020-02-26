@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-const BlogPost = ({
-  link = "",
-  title = "",
-  dateTime = "",
-  date = ""
-}) => (
-  <a className="t-link blog-posts__link grid__item" data-grid-medium="10" href={link}>
-    <span className="t-list-copy">{title}</span>
-    <time className="t-list-date blog-post__link__date" dateTime={dateTime}>{date}</time>
-  </a>
-);
+class BlogPost extends Component {
+  render () {
+    const { link, title, dateTime, date } = this.props.posts;
+    return (
+      <a className="t-link blog-posts__link grid__item" data-grid-medium="10" href={ link }>
+        <span className="t-list-copy">{ title }</span>
+        <time className="t-list-date blog-post__link__date" dateTime={ dateTime }>{ date }</time>
+      </a>
+    )
+  }
+}
+
+BlogPost.propTypes = {
+  posts: PropTypes.object.isRequired
+}
 
 export default BlogPost;
