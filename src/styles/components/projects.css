@@ -1,6 +1,6 @@
 .projects {
   width: 100%;
-  max-width: 736px;
+  max-width: 960px;
 
   @media (max-width: 799px) {
     margin-top: 1.5em;
