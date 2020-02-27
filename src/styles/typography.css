@@ -44,10 +44,6 @@
   font-size: var(--type-scale-18);
   letter-spacing: .0625rem;
   line-height: 1.6;
-
-  + .t-body {
-    margin-top: .444em;
-  }
 }
 
 .t-list-copy {

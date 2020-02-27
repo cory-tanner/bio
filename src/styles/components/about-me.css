@@ -1,20 +1,35 @@
 .about-me {
   width: 100%;
-  max-width: 736px;
+  max-width: 960px;
 
   @media (max-width: 799px) {
     margin-top: 1.5em;
   }
   @media (min-width: 800px) {
     margin-top: 3em;
+    display: grid;
+    grid-template-areas:
+    "heading heading"
+    "parOne parTwo";
+    grid-gap: 0 24px;
   }
 }
 
 .about-me__heading {
   margin-bottom: .333em;
   color: var(--color-brand-4);
+
+  @media (min-width: 800px) {
+    grid-area: heading;
+  }
 }
 
 .about-me__copy {
   color: var(--color-brand-4);
+
+  @media (max-width: 799px) {
+    &:last-of-type {
+      margin-top: .444em;
+    }
+  }
 }
