@@ -31,9 +31,9 @@
   --weight-extra-bold: 800;
 
   /* GLOBAL MEASUREMENTS */
-  --dy-gutter: 16px;
-  --dy-button-border-focus-radius: 6px;
-  --dy-button-border-radius: 4px;
+  --gutter: 16px;
+  --button-border-focus-radius: 6px;
+  --button-border-radius: 4px;
 
   /* TRANSITION */
   --global-transition: .3s ease;
