@@ -10,14 +10,14 @@ class Main extends Component {
       {
         id: 1,
         link: 'https://dockyard.com/blog/2019/12/05/know-the-code-how-design-and-engineering-team-up-for-design-qa',
-        title: 'narwin-grid: Harmony Between CSS Grid and Data Attributes',
+        title: 'Know the Code: How Design and Engineering Team Up for Design QA',
         dateTime: '2019-04-17T16:20:44.288Z',
         date: 'December 5, 2019'
       },
       {
         id: 2,
         link: 'https://dockyard.com/blog/2019/04/17/narwin-grid-harmony-between-css-grid-and-data-attributes',
-        title: 'Know the Code: How Design and Engineering Team Up for Design QA',
+        title: 'narwin-grid: Harmony Between CSS Grid and Data Attributes',
         dateTime: '2019-12-05T18:03:08.082Z',
         date: 'April 17, 2019'
       },
