@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../styles/components/main.css';
 import SectionAboutMe from './modules/sectionAboutMe';
 import SectionBlogPosts from './modules/sectionBlogPosts';
 import SectionProjects from './modules/sectionProjects';

@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Hero from './components/hero';
 import Main from './components/main';
 import Footer from './components/footer';
