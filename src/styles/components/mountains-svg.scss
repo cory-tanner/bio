@@ -1,6 +1,7 @@
 .mountain-svg {
   position: absolute;
   bottom: -6px;
+  cursor: pointer;
 
   @media (max-width: 559px) {
     left: 3px;
@@ -52,41 +53,67 @@
   }
 }
 
-.mountain-svg__bounce {
-  animation: bounce cubic-bezier(0.63, 0.23, 0.38, 0.91) 5s;
-  animation-delay: 3s;
-}
-.mountain-svg__bounce-2 {
-  animation: bounce cubic-bezier(0.68, 0.28, 0.49, 0.76) 6s;
-}
-.mountain-svg__bounce-3 {
-  animation: bounce cubic-bezier(0.68, 0.28, 0.49, 0.76) 6s;
-  animation-delay: 2s;
-}
-.mountain-svg__bounce-4 {
-  animation: bounce cubic-bezier(0.68, 0.28, 0.49, 0.76) 6s;
-  animation-delay: 4s;
-}
 .mountain-svg__bounce,
 .mountain-svg__bounce-2,
 .mountain-svg__bounce-3,
 .mountain-svg__bounce-4 {
-  animation-iteration-count: infinite;
   stroke: var(--color-gray-2);
   stroke-width: 1px;
+  position: relative;
+
+  [data-cloud-state="clear"] & {
+    animation-name: poof;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.68, 0.28, 0.49, 0.76);
+  }
+  [data-cloud-state="cloudy"] & {
+    animation-name: bounce;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.68, 0.28, 0.49, 0.76);
+  }
+}
+
+.mountain-svg__bounce {
+  animation-delay: 3s;
+}
+.mountain-svg__bounce-3 {
+  animation-delay: 2s;
+}
+.mountain-svg__bounce-4 {
+  animation-delay: 4s;
 }
 @keyframes bounce {
   0% {
     transform: translateY(0);
   }
   30% {
-    transform: translateY(2px);
+    transform: translateY(3px);
   }
   60% {
     transform: translateY(-2px);
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes poof {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
   }
 }
 
@@ -110,5 +137,60 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+.mountain-svg__sun-cloud {
+  [data-cloud-state="clear"] & {
+    animation-name: sunCloud;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+}
+
+.mountain-svg__sun {
+  stroke: var(--color-gray-2);
+
+  [data-cloud-state="clear"] & {
+    animation-name: sun;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+  [data-cloud-state="cloudy"] & {
+    animation-name: sunCloud;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+}
+@keyframes sun {
+  0% {
+    transform: translateY(-20px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(-4px);
+  }
+  85% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes sunCloud {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
   }
 }
