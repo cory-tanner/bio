@@ -3,10 +3,10 @@
   bottom: -6px;
   cursor: pointer;
 
-  @media (max-width: 559px) {
+  @media (max-width: 959px) {
     left: 3px;
   }
-  @media (min-width: 560px) {
+  @media (min-width: 960px) {
     left: -5px;
   }
 }
@@ -16,13 +16,42 @@
 .mountain-svg__third {
   position: relative;
 
-  @media (max-width: 559px) {
+  @media (max-width: 659px) {
     width: 64px;
     height: 64px;
   }
-  @media (min-width: 560px) {
+  @media (min-width: 660px) {
     width: 86px;
     height: 86px;
+  }
+}
+
+.mountain-svg__fourth {
+  position: relative;
+
+  @media (max-width: 659px) {
+    width: 54px;
+    height: 54px;
+    bottom: 1px;
+    left: -36px;
+  }
+  @media (min-width: 660px) {
+    width: 76px;
+    height: 76px;
+    left: -46px;
+  }
+}
+
+.mountain-svg__fith {
+  position: relative;
+
+  @media (max-width: 559px) {
+    display: none;
+  }
+  @media (min-width: 560px) {
+    width: 66px;
+    height: 66px;
+    left: -58px;
   }
 }
 
@@ -140,30 +169,20 @@
   }
 }
 
-.mountain-svg__sun-cloud {
-  [data-cloud-state="clear"] & {
-    animation-name: sunCloud;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-  }
-}
-
 .mountain-svg__sun {
   stroke: var(--color-gray-2);
 
   [data-cloud-state="clear"] & {
     animation-name: sun;
-    animation-duration: 2s;
+    animation-duration: 6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
   }
   [data-cloud-state="cloudy"] & {
     animation-name: sunCloud;
-    animation-duration: 2s;
+    animation-duration: 6s;
+    animation-delay: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
@@ -172,15 +191,6 @@
 @keyframes sun {
   0% {
     transform: translateY(-20px);
-  }
-  25% {
-    transform: translateY(-10px);
-  }
-  70% {
-    transform: translateY(-4px);
-  }
-  85% {
-    transform: translateY(-2px);
   }
   100% {
     transform: translateY(0);

@@ -1,13 +1,7 @@
 .socials {
   display: flex;
   align-self: flex-end;
-
-  @media (max-width: 569px) {
-    margin-top: 8px;
-  }
-  @media (min-width: 560px) {
-    margin-top: 16px;
-  }
+  z-index: 1;
 }
 
 .socials__link {
