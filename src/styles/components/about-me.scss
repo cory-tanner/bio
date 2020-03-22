@@ -2,25 +2,92 @@
   width: 100%;
   max-width: 960px;
 
+  @media (min-width: 576px) {
+    grid-column-gap: 32px;
+  }
   @media (max-width: 799px) {
     margin-top: 1.5em;
+    grid-row-gap: 18px;
   }
   @media (min-width: 800px) {
     margin-top: 3em;
+    grid-row-gap: 20px;
+  }
+}
+
+.about-me__skills {
+  @media (min-width: 1024px) {
+    grid-column-start: 9;
   }
 }
 
 .about-me__heading {
   margin-bottom: .333em;
+  width: 100%;
+  flex-shrink: 0;
   color: var(--color-brand-4);
+}
+
+.about-me__heading--skills {
+  @media (min-width: 576px) {
+    margin-top: .25em;
+  }
 }
 
 .about-me__copy {
   color: var(--color-brand-4);
 
-  @media (max-width: 1023px) {
-    &:last-of-type {
-      margin-top: .444em;
+  &:last-of-type {
+    margin-top: .75em;
+  }
+}
+
+.about-me__list__item {
+  color: var(--color-gray-4);
+  
+  &:not(:last-of-type) {
+    margin-bottom: .5em;
+  }
+}
+
+.about-me__logos {
+  max-width: 500px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.about-me__logo {
+  flex-shrink: 0;
+
+  @media (max-width: 699px) {
+    &:not(:first-of-type) {
+      margin-left: 24px;
     }
+  }
+  @media (min-width: 700px) {
+    &:not(:first-of-type) {
+      margin-left: 56px;
+    }
+  }
+}
+
+.about-me__logo--zipcar,
+.about-me__logo--netflix {
+  @media (max-width: 699px) {
+    max-width: 100px;
+  }
+  @media (min-width: 700px) {
+    max-width: 140px;
+  }
+}
+
+.about-me__logo--apple {
+  @media (max-width: 699px) {
+    max-width: 30px;
+  }
+  @media (min-width: 700px) {
+    max-width: 40px;
   }
 }
