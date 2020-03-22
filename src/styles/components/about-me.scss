@@ -1,9 +1,10 @@
 .about-me {
   width: 100%;
   max-width: 960px;
+  grid-gap: 32px;
 
   @media (max-width: 799px) {
-    margin-top: 1.5em;
+    margin-top: 2em;
   }
   @media (min-width: 800px) {
     margin-top: 3em;
@@ -12,7 +13,13 @@
 
 .about-me__heading {
   margin-bottom: .333em;
+  width: 100%;
+  flex-shrink: 0;
   color: var(--color-brand-4);
+}
+
+.about-me__heading--worked {
+  margin-top: .5em;
 }
 
 .about-me__copy {
@@ -22,5 +29,56 @@
     &:last-of-type {
       margin-top: .444em;
     }
+  }
+}
+
+.about-me__list {
+  padding-left: 24px;
+}
+
+.about-me__list__item {
+  margin-bottom: .5em;
+  color: var(--color-gray-4);
+}
+
+.about-me__logos {
+  max-width: 560px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.about-me__logo {
+  flex-shrink: 0;
+
+  @media (max-width: 699px) {
+    &:not(:first-of-type) {
+      margin-left: 24px;
+    }
+  }
+  @media (min-width: 700px) {
+    &:not(:first-of-type) {
+      margin-left: 56px;
+    }
+  }
+}
+
+.about-me__logo--zipcar,
+.about-me__logo--netflix {
+  @media (max-width: 699px) {
+    max-width: 120px;
+  }
+  @media (min-width: 700px) {
+    max-width: 160px;
+  }
+}
+
+.about-me__logo--apple {
+  @media (max-width: 699px) {
+    max-width: 32px;
+  }
+  @media (min-width: 700px) {
+    max-width: 44px;
   }
 }

@@ -41,15 +41,24 @@
 }
 
 .t-body {
-  font-size: var(--type-scale-18);
+  font-size: var(--type-scale-16);
   letter-spacing: .0625rem;
   line-height: 1.6;
 }
 
 .t-list-copy {
   font-family: var(--font-mukta);
+  font-size: var(--type-scale-18);
+  font-weight: var(--weight-extra-bold);
+  letter-spacing: .0625rem;
+  line-height: 1.2;
+}
+
+.t-list-blog {
+  font-family: var(--font-mukta);
   font-size: var(--type-scale-20);
   font-weight: var(--weight-extra-bold);
+  letter-spacing: .05rem;
   line-height: 1.2;
 }
 
