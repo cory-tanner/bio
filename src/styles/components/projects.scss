@@ -3,10 +3,10 @@
   max-width: 960px;
 
   @media (max-width: 799px) {
-    margin-top: 2em;
+    margin-top: 3em;
   }
   @media (min-width: 800px) {
-    margin-top: 3em;
+    margin-top: 6em;
   }
 }
 
@@ -16,7 +16,6 @@
 }
 
 .projects__link {
-  max-width: 356px;
   margin-top: 1em;
   display: inline-flex;
   flex-direction: column;
@@ -25,10 +24,14 @@
   border: 5px solid var(--color-brand-3);
   border-radius: 4px;
   text-decoration: none;
-
+  
   &:hover,
   &:focus {
     border-color: var(--color-link);
+  }
+  
+  @media (max-width: 575px) {
+    max-width: 356px;
   }
 }
 

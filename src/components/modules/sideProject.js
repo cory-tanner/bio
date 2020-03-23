@@ -6,7 +6,7 @@ class SideProject extends Component {
     const { link, imgURL, alt, name } = this.props.projects;
     
     return (
-      <a className="projects__link grid__item" data-grid-small="12" data-grid-medium="6" data-grid-large="6" href={link}>
+      <a className="projects__link grid__item" data-grid-small="12" data-grid-medium="6" data-grid-large="4" href={link}>
         <img className="projects__link__img" src={imgURL} alt={alt}></img>
         <span className="t-body projects__link__name">{name}</span>
       </a>

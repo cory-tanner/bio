@@ -33,10 +33,24 @@
   line-height: 1.2;
 
   @media (max-width: 799px) {
-    font-size: var(--type-scale-24);
+    font-size: var(--type-scale-30);
   }
   @media (min-width: 800px) {
-    font-size: var(--type-scale-30);
+    font-size: var(--type-scale-32);
+  } 
+}
+
+.t-section-sub-heading {
+  font-family: var(--font-mukta);
+  font-weight: var(--weight-extra-bold);
+  letter-spacing: .0625rem;
+  line-height: 1.2;
+
+  @media (max-width: 799px) {
+    font-size: var(--type-scale-20);
+  }
+  @media (min-width: 800px) {
+    font-size: var(--type-scale-24);
   } 
 }
 
@@ -47,19 +61,27 @@
 }
 
 .t-list-copy {
-  font-family: var(--font-mukta);
-  font-size: var(--type-scale-18);
-  font-weight: var(--weight-extra-bold);
   letter-spacing: .0625rem;
   line-height: 1.2;
+  @media (max-width: 799px) {
+    font-size: var(--type-scale-16);
+  }
+  @media (min-width: 800px) {
+    font-size: var(--type-scale-18);
+  } 
 }
 
 .t-list-blog {
   font-family: var(--font-mukta);
-  font-size: var(--type-scale-20);
   font-weight: var(--weight-extra-bold);
   letter-spacing: .05rem;
   line-height: 1.2;
+  @media (max-width: 799px) {
+    font-size: var(--type-scale-18);
+  }
+  @media (min-width: 800px) {
+    font-size: var(--type-scale-20);
+  } 
 }
 
 .t-list-date {
