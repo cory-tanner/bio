@@ -16,7 +16,7 @@ class Main extends Component {
       {
         id: 2,
         link: 'https://dockyard.com/blog/2019/04/17/narwin-grid-harmony-between-css-grid-and-data-attributes',
-        title: 'narwin-grid: Harmony Between CSS Grid and Data Attributes',
+        title: 'Narwin-Grid: Harmony Between CSS Grid and Data Attributes',
         dateTime: '2019-04-17T16:20:44.288Z',
         date: 'April 17, 2019'
       },

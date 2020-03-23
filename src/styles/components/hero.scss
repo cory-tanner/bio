@@ -8,12 +8,15 @@
   width: 100%;
   position: relative;
   border-bottom: 2px solid var(--color-brand-4);
-  
+
   @media (max-width: 799px) {
     padding: 24px 12px 4px 12px;
   }
-  @media (min-width: 800px) {
+  @media (min-width: 800px) and (max-width: 975px) {
     padding: 42px 12px 8px 12px;
+  }
+  @media (min-width: 976px) {
+    padding: 42px 12px 8px 0;
   }
 }
 
