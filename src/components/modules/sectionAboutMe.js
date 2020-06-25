@@ -5,7 +5,7 @@ const SectionAboutMe = () => (
   <section className="about-me grid">
     <div className="grid__item" data-grid-medium="7">
       <h3 className="t-section-heading about-me__heading">My Adventure</h3>
-      <p className="t-body about-me__copy">Hi! I’m a Senior UX Developer that specializes in the usability of applications. I believe that the user experience of an application should impact the development process and practices we as developers use in our daily routines.</p>
+      <p className="t-body about-me__copy">Hi! I’m a Senior UI Engineer that specializes in the usability of applications. I believe that the user experience of an application should impact the development process and practices we as developers use in our daily routines.</p>
       <p className="t-body about-me__copy">I aim to always develop for the user and do what is best for their experience on the web.</p>
     </div>
     <div className="grid__item about-me__skills" data-grid-medium="5" data-grid-large="4">
