@@ -51,43 +51,51 @@
 }
 
 .about-me__logos {
-  max-width: 500px;
-  display: flex;
+  max-width: 700px;
+  display: grid;
   align-items: baseline;
-  justify-content: space-between;
-  flex-flow: wrap;
+  
+  @media (max-width: 719px) {
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 24px;
+  }
+  @media (min-width: 720px) {
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 56px;
+  }
 }
 
 .about-me__logo {
-  flex-shrink: 0;
+  height: auto;
 
-  @media (max-width: 699px) {
-    &:not(:first-of-type) {
-      margin-left: 24px;
-    }
-  }
-  @media (min-width: 700px) {
-    &:not(:first-of-type) {
-      margin-left: 56px;
-    }
+  @media (min-width: 720px) {
+    justify-self: center;
   }
 }
 
 .about-me__logo--zipcar,
 .about-me__logo--netflix {
-  @media (max-width: 699px) {
+  @media (max-width: 719px) {
     max-width: 100px;
   }
-  @media (min-width: 700px) {
+  @media (min-width: 720px) {
     max-width: 140px;
   }
 }
 
+.about-me__logo--rebud {
+  @media (max-width: 719px) {
+    max-width: 136px;
+  }
+  @media (min-width: 720px) {
+    max-width: 188px;
+  }
+}
 .about-me__logo--apple {
-  @media (max-width: 699px) {
+  @media (max-width: 719px) {
     max-width: 30px;
   }
-  @media (min-width: 700px) {
+  @media (min-width: 720px) {
     max-width: 40px;
   }
 }

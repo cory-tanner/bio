@@ -24,8 +24,9 @@ const SectionAboutMe = () => (
       <h4 className="t-section-sub-heading about-me__heading">Worked With</h4>
       <div className="about-me__logos">
         <SVGIcon name="netflix" className="about-me__logo about-me__logo--netflix" />
-        <SVGIcon name="apple" className="about-me__logo about-me__logo--apple" />
+        <SVGIcon name="rebud" className="about-me__logo about-me__logo--rebud" />
         <SVGIcon name="zipcar" className="about-me__logo about-me__logo--zipcar" />
+        <SVGIcon name="apple" className="about-me__logo about-me__logo--apple" />
       </div>
     </div>
   </section>
