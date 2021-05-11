@@ -63,13 +63,6 @@ class Main extends Component {
         imgURL: './images/bitratecalc.jpg',
         alt: 'Bitrate Calc side project',
         name: 'Bitratecalc.com'
-      },
-      {
-        id: 2,
-        link: 'https://personaltodo.com/',
-        imgURL: './images/personaltodo.jpg',
-        alt: 'Personal TODO side project',
-        name: 'Personaltodo.com (WIP)'
       }
     ]
   }
