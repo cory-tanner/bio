@@ -7,7 +7,7 @@ const Socials = () => (
       <SVGIcon name="twitter" className="socials__social" />
     </a>
 
-    <a className="socials__link" href="https://github.com/Ctannerweb" aria-label="Cory Tanner’s GitHub">
+    <a className="socials__link" href="https://github.com/squirt11e" aria-label="Cory Tanner’s GitHub">
       <SVGIcon name="github" className="socials__social" />
     </a>
 
